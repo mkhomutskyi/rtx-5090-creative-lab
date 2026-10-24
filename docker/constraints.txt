@@ -1,0 +1,6 @@
+torch==2.14.1+cu130
+torchvision==0.29.1+cu130
+transformers==5.19.0
+tokenizers==0.23.2
+huggingface-hub==1.33.0
+hf-xet==1.7.0

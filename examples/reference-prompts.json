@@ -1,0 +1,10 @@
+{
+  "jobs": [
+    {
+      "name": "robot-reference-study",
+      "reference": "robot-reference.png",
+      "seed": 2410202604,
+      "prompt": "Transform the main robot in the reference into a clean editorial pen-and-ink illustration on a seamless white background. Preserve its actual mechanical construction, head shape, camera lenses, neck joints, body proportions, leg count and feet. Show the entire robot in a natural standing pose with room around it. Use black fine contours and crosshatching, pale blue shading and sparse yellow accents. Preserve the subject identity rather than inventing anatomy. Remove background people and objects. No text, logos, watermarks or extra robots."
+    }
+  ]
+}

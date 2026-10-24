@@ -1,0 +1,10 @@
+{
+  "negative": "text, letters, words, labels, logo, watermark, duplicate characters, extra limbs, deformed anatomy, collage, split panels",
+  "jobs": [
+    {
+      "name": "moon-workshop",
+      "seed": 2410202601,
+      "prompt": "Original hand-painted gouache and watercolor illustration of one small round yellow robot repairing one broken blue telescope outside a tiny repair shop on the Moon. The telescope stands on a stable tripod. The robot uses two simple mechanical hands to turn one screw. Earth hangs above the horizon. Warm light spills from the workshop into the cool lunar landscape. Clear single action, kind expression, visible brush texture and subtle colored pencil. Uncluttered landscape composition, full robot and telescope visible. Wordless, no text, letters, signs, labels, logos or watermarks."
+    }
+  ]
+}

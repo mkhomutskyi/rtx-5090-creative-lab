@@ -1,0 +1,10 @@
+{
+  "cases": [
+    {"name":"kokoro-scene", "audio":"outputs/kokoro-scene.wav", "reference":"examples/scene.txt"},
+    {"name":"kokoro-technical", "audio":"outputs/kokoro-technical.wav", "reference":"examples/speech-technical.txt"},
+    {"name":"kokoro-playful", "audio":"outputs/kokoro-playful.wav", "reference":"examples/speech-playful.txt"},
+    {"name":"voxtral-scene", "audio":"outputs/voxtral-scene.wav", "reference":"examples/scene.txt"},
+    {"name":"voxtral-technical", "audio":"outputs/voxtral-technical.wav", "reference":"examples/speech-technical.txt"},
+    {"name":"voxtral-playful", "audio":"outputs/voxtral-playful.wav", "reference":"examples/speech-playful.txt"}
+  ]
+}

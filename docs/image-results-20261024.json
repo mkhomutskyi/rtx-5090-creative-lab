@@ -1,0 +1,29 @@
+{
+  "checked_date": "2026-10-24",
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "driver": "621.01",
+  "comfyui_commit": "b0b743566f65daafc423b4fea8a2fbda94b3384a",
+  "local_built_image_id": "sha256:37c0721206c8eca1b76095521340d09b9908d2c627755446a2da54a2619bc873",
+  "python": "3.12.15",
+  "torch": "2.14.1+cu130",
+  "cuda": "13.0",
+  "examples": [
+    {
+      "example": "moon-workshop",
+      "elapsed_wall_seconds": 45.15,
+      "includes_model_loading": true,
+      "image_sha256": "dfd9d82cb07b14081b2d5d4fa23c155a9df41802bc78430dbba65a30877667e2",
+      "completed": true,
+      "visually_reviewed": true
+    },
+    {
+      "example": "robot-reference-study",
+      "elapsed_wall_seconds": 10.02,
+      "includes_model_loading": true,
+      "image_sha256": "d84367a7a9f1f7409270536a9c7bd49f8947e0586f453c4bc1a323e0e4cbc0fa",
+      "completed": true,
+      "visually_reviewed": true
+    }
+  ],
+  "reference_input": "A previously generated robot illustration, not distributed in the code repository."
+}

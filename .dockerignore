@@ -1,0 +1,15 @@
+.git
+.env*
+models
+inputs
+outputs
+state
+private
+__pycache__
+*.pyc
+*.gguf
+*.safetensors
+*.pt
+*.ckpt
+
+.git/

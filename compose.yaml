@@ -1,0 +1,68 @@
+name: rtx5090-creative-lab
+services:
+  comfyui:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    image: rtx5090-creative-lab/comfyui:source-0.39.0-cu130
+    ports:
+      - "127.0.0.1:8195:8188"
+    gpus: all
+    restart: "no"
+    environment:
+      HF_HUB_OFFLINE: "1"
+      HF_HUB_DISABLE_TELEMETRY: "1"
+    volumes:
+      - ./models:/opt/ComfyUI/models:ro
+      - ./inputs:/opt/ComfyUI/input
+      - ./outputs:/opt/ComfyUI/output
+      - ./state/comfyui:/opt/ComfyUI/user
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8188/system_stats', timeout=5).read()"]
+      interval: 15s
+      timeout: 10s
+      retries: 8
+      start_period: 90s
+  kokoro:
+    profiles: [voice]
+    image: ghcr.io/remsky/kokoro-fastapi-gpu@sha256:9ade1e3a52d3e8c62123a1b23f7677ed909d90270b6f8ec660179b31b2448124
+    ports:
+      - "127.0.0.1:8895:8880"
+    gpus: all
+    restart: "no"
+    environment:
+      API_LOG_LEVEL: WARNING
+  voxtral-tts:
+    profiles: [voxtral]
+    image: vllm/vllm-omni@sha256:fc77cfaac7b1b43c30cbf32eaea214864434c6e0f303e6e9eb9f64104241a994
+    ports:
+      - "127.0.0.1:8896:8000"
+    gpus: all
+    shm_size: 2gb
+    restart: "no"
+    environment:
+      HF_HUB_OFFLINE: "1"
+      HF_HUB_DISABLE_TELEMETRY: "1"
+      VLLM_NO_USAGE_STATS: "1"
+    volumes:
+      - ./models/voxtral-tts:/models/voxtral-tts:ro
+      - ./state/voxtral-tts:/root/.cache/vllm
+      - ./docker/voxtral-tts.yaml:/lab/voxtral-tts.yaml:ro
+    command: ["vllm", "serve", "/models/voxtral-tts", "--omni", "--host", "0.0.0.0", "--port", "8000", "--served-model-name", "voxtral-tts", "--deploy-config", "/lab/voxtral-tts.yaml"]
+  voxtral-stt:
+    profiles: [voxtral]
+    image: vllm/vllm-omni@sha256:fc77cfaac7b1b43c30cbf32eaea214864434c6e0f303e6e9eb9f64104241a994
+    gpus: all
+    shm_size: 2gb
+    restart: "no"
+    working_dir: /lab
+    environment:
+      HF_HUB_OFFLINE: "1"
+      HF_HUB_DISABLE_TELEMETRY: "1"
+      VLLM_NO_USAGE_STATS: "1"
+    volumes:
+      - ./models/voxtral-stt:/models/voxtral-stt:ro
+      - ./scripts:/lab/scripts:ro
+      - ./examples:/lab/examples:ro
+      - ./outputs:/lab/outputs
+    command: ["python", "scripts/transcribe_voxtral.py", "--model", "/models/voxtral-stt", "--cases", "examples/speech-cases.json", "--output", "outputs/voxtral-stt-results.json"]

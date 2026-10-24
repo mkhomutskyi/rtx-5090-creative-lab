@@ -1,0 +1,228 @@
+{
+  "model": "mistralai/Voxtral-Mini-4B-Realtime-2602",
+  "revision": "2769294da9567371363522aac9bbcfdd19447add",
+  "device": "NVIDIA GeForce RTX 5090",
+  "dtype": "torch.bfloat16",
+  "model_loading_seconds": 52.888,
+  "mode": "file transcription; not a live microphone/streaming latency test",
+  "normalization": "NFKC, lowercase, Unicode word tokens; no number or acronym rewriting",
+  "cases": [
+    {
+      "name": "kokoro-scene",
+      "source_text": "Milo opened the smallest repair shop on the Moon. His first customer brought a telescope that could only see pebbles. Milo polished the lens and turned one tiny screw. Far above the silver hills, Earth appeared in the glass. The customer smiled. Milo hung a little bell beside his door. Tomorrow, perhaps someone would bring him a broken star.",
+      "transcript": "Milo opened the smallest repair shop on the moon. His first customer brought a telescope that could only see pebbles. Milo polished the lens and turned one tiny screw. Far above the silver hills, Earth appeared in the glass. The customer smiled. Milo hung a little bell beside his door. Tomorrow, perhaps someone would bring him a broken star.",
+      "audio_seconds": 21.66,
+      "inference_seconds": 24.927,
+      "real_time_factor": 1.151,
+      "first_generation": true,
+      "peak_gpu_allocated_gib": 8.508,
+      "reference_words": 59,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0,
+      "wer": 0.0
+    },
+    {
+      "name": "kokoro-technical",
+      "source_text": "Welcome to my RTX 5090 creative lab. We use ComfyUI for pictures, Kokoro for narration, and Voxtral for speech. The launch code is four two seven one. The repair costs twelve dollars and fifty cents.",
+      "transcript": "Welcome to my RTX 5090 Creative Lab. We use Comfy UI for pictures, Kokoro for narration, and Voxtral for speech. The launch code is 4271. The repair costs $12.50.",
+      "audio_seconds": 14.622,
+      "inference_seconds": 5.376,
+      "real_time_factor": 0.368,
+      "first_generation": false,
+      "peak_gpu_allocated_gib": 8.498,
+      "reference_words": 35,
+      "substitutions": 4,
+      "deletions": 6,
+      "insertions": 1,
+      "wer": 0.3142857142857143
+    },
+    {
+      "name": "kokoro-playful",
+      "source_text": "The tiny robot took one look at the audience and decided it was time for a nap. Jensen laughed. Honestly, I might have done the same.",
+      "transcript": "The tiny robot took one look at the audience and decided it was time for a nap. Jensen laughed. Honestly, I might have done the same.",
+      "audio_seconds": 8.288,
+      "inference_seconds": 3.029,
+      "real_time_factor": 0.366,
+      "first_generation": false,
+      "peak_gpu_allocated_gib": 8.459,
+      "reference_words": 26,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0,
+      "wer": 0.0
+    },
+    {
+      "name": "voxtral-scene",
+      "source_text": "Milo opened the smallest repair shop on the Moon. His first customer brought a telescope that could only see pebbles. Milo polished the lens and turned one tiny screw. Far above the silver hills, Earth appeared in the glass. The customer smiled. Milo hung a little bell beside his door. Tomorrow, perhaps someone would bring him a broken star.",
+      "transcript": "Milo opened the smallest repair shop on the moon. His first customer brought a telescope that could only see pebbles. Milo polished the lens and turned one tiny screw. Far above the silver hills, Earth appeared in the glass. The customer smiled. Milo hung a little bell beside his door. Tomorrow, perhaps someone would bring him a broken star.",
+      "audio_seconds": 18.779,
+      "inference_seconds": 6.744,
+      "real_time_factor": 0.359,
+      "first_generation": false,
+      "peak_gpu_allocated_gib": 8.504,
+      "reference_words": 59,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0,
+      "wer": 0.0
+    },
+    {
+      "name": "voxtral-technical",
+      "source_text": "Welcome to my RTX 5090 creative lab. We use ComfyUI for pictures, Kokoro for narration, and Voxtral for speech. The launch code is four two seven one. The repair costs twelve dollars and fifty cents.",
+      "transcript": "Welcome to my RTX 5090 Creative Lab. We use Comfy UI for pictures, Kokoro for narration, and Voxtral for speech. The launch code is 4271, the repair costs $12.50,",
+      "audio_seconds": 15.832,
+      "inference_seconds": 5.564,
+      "real_time_factor": 0.351,
+      "first_generation": false,
+      "peak_gpu_allocated_gib": 8.499,
+      "reference_words": 35,
+      "substitutions": 4,
+      "deletions": 6,
+      "insertions": 1,
+      "wer": 0.3142857142857143
+    },
+    {
+      "name": "voxtral-playful",
+      "source_text": "The tiny robot took one look at the audience and decided it was time for a nap. Jensen laughed. Honestly, I might have done the same.",
+      "transcript": "The tiny robot took one look at the audience and decided it was time for a nap. Jensen laughed. Honestly, I might have done the same.",
+      "audio_seconds": 7.495,
+      "inference_seconds": 2.738,
+      "real_time_factor": 0.365,
+      "first_generation": false,
+      "peak_gpu_allocated_gib": 8.443,
+      "reference_words": 26,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0,
+      "wer": 0.0
+    }
+  ],
+  "checked_date": "2026-10-24",
+  "tts_runtime_image": "vllm/vllm-omni@sha256:fc77cfaac7b1b43c30cbf32eaea214864434c6e0f303e6e9eb9f64104241a994",
+  "runtime_versions": {
+    "vllm": "0.30.0",
+    "vllm-omni": "0.30.0",
+    "transformers": "5.14.1",
+    "mistral-common": "1.11.7",
+    "torch": "2.13.0+cu130"
+  },
+  "tts_requests": {
+    "kokoro": [
+      {
+        "name": "scene",
+        "speed": 0.95,
+        "model": "kokoro",
+        "request_wall_seconds": 1.653,
+        "voice": "af_heart"
+      },
+      {
+        "name": "technical",
+        "speed": 0.95,
+        "model": "kokoro",
+        "request_wall_seconds": 0.31,
+        "voice": "af_heart"
+      },
+      {
+        "name": "playful",
+        "speed": 0.95,
+        "model": "kokoro",
+        "request_wall_seconds": 0.277,
+        "voice": "af_heart"
+      }
+    ],
+    "voxtral": [
+      {
+        "request_wall_seconds": 56.494,
+        "voice": "casual_male",
+        "model": "Voxtral-4B-TTS-2603",
+        "speed": 0.95,
+        "name": "scene"
+      },
+      {
+        "request_wall_seconds": 3.29,
+        "voice": "casual_male",
+        "model": "Voxtral-4B-TTS-2603",
+        "speed": 0.95,
+        "name": "technical"
+      },
+      {
+        "request_wall_seconds": 1.678,
+        "voice": "casual_male",
+        "model": "Voxtral-4B-TTS-2603",
+        "speed": 0.95,
+        "name": "playful"
+      }
+    ]
+  },
+  "audio_checks": [
+    {
+      "name": "kokoro-playful",
+      "bytes": 397876,
+      "seconds": 8.288,
+      "sample_rate": 24000,
+      "channels": 1,
+      "pcm_bits": 16,
+      "sha256": "41a35d48dc04562041acedf1b3caa6e71cd0bf6dd98439b6323b226ad7bc750c"
+    },
+    {
+      "name": "kokoro-scene",
+      "bytes": 1039720,
+      "seconds": 21.66,
+      "sample_rate": 24000,
+      "channels": 1,
+      "pcm_bits": 16,
+      "sha256": "d3f3e2c58ba57d919524b520ef6e764b0326023ce9a5c03b4a64faa11e20da4e"
+    },
+    {
+      "name": "kokoro-technical",
+      "bytes": 701880,
+      "seconds": 14.622,
+      "sample_rate": 24000,
+      "channels": 1,
+      "pcm_bits": 16,
+      "sha256": "ce20b8aba35bc999b52754d574171f0e74e05423dbbe25360a8b2b3fcbacd8a1"
+    },
+    {
+      "name": "voxtral-playful",
+      "bytes": 359790,
+      "seconds": 7.495,
+      "sample_rate": 24000,
+      "channels": 1,
+      "pcm_bits": 16,
+      "sha256": "02b83b1ef5320cf90af49be92e47fa5e3bb968e966a1cc563d50e0f3d1e71b4d"
+    },
+    {
+      "name": "voxtral-scene",
+      "bytes": 901432,
+      "seconds": 18.779,
+      "sample_rate": 24000,
+      "channels": 1,
+      "pcm_bits": 16,
+      "sha256": "9ac242490d78f0cd61067e392974a5d16ca7f00a23995adf0203620639ef3407"
+    },
+    {
+      "name": "voxtral-technical",
+      "bytes": 759958,
+      "seconds": 15.832,
+      "sample_rate": 24000,
+      "channels": 1,
+      "pcm_bits": 16,
+      "sha256": "d1739d882fe20eeb7f33eb4e967cb89eb07643544ad3d360adffd499524a67ef"
+    }
+  ],
+  "model_hashes": [
+    {
+      "file": "models/voxtral-tts/consolidated.safetensors",
+      "sha256": "66c4fd998db10e1a6d9cc5baa10e6264bf10701ec22ccdc0822c7dcc45dbe55b",
+      "bytes": 8004752248
+    },
+    {
+      "file": "models/voxtral-stt/model.safetensors",
+      "sha256": "e745e4902df6a4c48f29f2f8dc1f6d0fb4cc73c7156bc45923451a5bcdfcd1d6",
+      "bytes": 8859446848
+    }
+  ],
+  "interpretation": "The technical samples have 31.4% raw WER from written forms: Comfy UI, 4271 and $12.50. The metric does not normalize those equivalents. This is not evidence of 31.4% unintelligible speech.",
+  "human_listening_review_completed": false
+}
