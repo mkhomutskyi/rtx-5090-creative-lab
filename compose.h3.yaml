@@ -1,0 +1,26 @@
+name: rtx5090-h3-guide
+services:
+  h3:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    image: rtx5090-creative-lab/comfyui:h3-guide
+    ports:
+      - "127.0.0.1:${H3_PORT:-8193}:8188"
+    gpus: all
+    mem_limit: 34g
+    memswap_limit: 42g
+    cpus: 12
+    shm_size: 2g
+    restart: "no"
+    environment:
+      H3_IDLE_SECONDS: "900"
+      HF_HUB_OFFLINE: "1"
+      HF_HUB_DISABLE_TELEMETRY: "1"
+    volumes:
+      - ./models:/opt/ComfyUI/models:ro
+      - ./inputs:/opt/ComfyUI/input
+      - ./outputs:/opt/ComfyUI/output
+      - ./state/h3:/opt/ComfyUI/user
+      - ./scripts:/lab/scripts:ro
+    command: ["python", "/lab/scripts/serve_h3.py", "--listen", "0.0.0.0", "--port", "8188", "--disable-all-custom-nodes", "--preview-method", "none", "--cache-ram", "2", "4", "--mmap-torch-files", "--enable-dynamic-vram", "--fast-disk", "--disable-pinned-memory", "--disable-async-offload", "--disable-comfy-compiler", "--use-ck-attention", "--reserve-vram", "3"]

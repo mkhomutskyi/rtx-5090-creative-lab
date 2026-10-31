@@ -18,3 +18,7 @@
 Our setup code, original prompts and documentation are licensed under [MIT](../LICENSE). The adapted Voxtral pipeline retains Apache 2.0; see [third-party notices](../THIRD_PARTY_NOTICES.md). ComfyUI is fetched separately and retains its upstream GPL license. Model weights, PyTorch, LM Studio, Docker Desktop and the Kokoro image retain their own terms; our license does not relicense any of them. See [ComfyUI](https://github.com/Comfy-Org/ComfyUI), [PyTorch](https://pytorch.org/), [Kokoro](https://github.com/hexgrad/kokoro), [Kokoro-FastAPI](https://github.com/remsky/Kokoro-FastAPI), and [LM Studio](https://lmstudio.ai/).
 
 Docker builds and model downloads need internet access. The selected local inference paths do not require a hosted generation API or API key. A cloud node or connected LM Studio tool would change that boundary; none is configured by this candidate. No NVIDIA or robot-manufacturer endorsement is implied.
+
+## MiniMax H3 companion
+
+See [the H3 licensing notes](h3/LICENSING.md). H3 weights are not bundled or licensed under this repository's code licence. Readers must obtain applicable rights themselves. The generated Paris example separately credits Microduck's design reference and the music creator. Full music recordings and original reference photography are not redistributed.

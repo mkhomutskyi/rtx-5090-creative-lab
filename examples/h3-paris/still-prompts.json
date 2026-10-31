@@ -1,0 +1,67 @@
+{
+  "model": "flux-2-klein-9b-kv-fp8.safetensors",
+  "steps": 4,
+  "cfg": 1.0,
+  "jobs": [
+    {
+      "name": "01-cafe",
+      "seed": 2026103100,
+      "reference": "microduck-paris-design-reference.png",
+      "crop": {
+        "width": 460,
+        "height": 700,
+        "x": 220,
+        "y": 160
+      },
+      "prompt": "Unprocessed RAW documentary photograph with natural muted colors and soft neutral exposure, authentic35mm camera photograph of the small physical Microduck biped robot from the reference image. Preserve its real construction: pale sky-blue rounded wedge head, a single circular black camera lens with a yellow ring on the visible side, thin orange hinged beak along the lower head edge, exposed slender black articulated neck and wiring, small pale-blue hip shell, exactly two black jointed mechanical legs, exactly two broad orange feet with yellow soles. It has NO arms, hands, wings, backpack, human face or organic duck body. Real molded plastic, metal joints, screws and cables, physically plausible25cm toy-sized robot. One pale-blue Microduck stands on the cobblestone pavement beside a wicker chair outside a Paris cafe in the morning. A small round table nearby holds a white espresso cup. Low camera near robot eye level; elegant stone Paris buildings, subtle warm sunlight, believable scale. Robot faces diagonally toward the cafe, full body and both feet visible. Create a completely new Paris background; remove all people, hands, human legs, original gym floor, ball and stickers from the reference. This is a convincing photograph of physical robots, NOT a cartoon, drawing, illustration, watercolor, 3D render or plastic duck toy. Natural matte painted plastic, believable slight wear, delicate film grain, soft realistic shadows, subtle color grading, no HDR, no oversaturation, no neon colors, no glowing edges, no illustration, no toy-commercial CGI, no lettering, shop signs, text, logos or watermark. Landscape image."
+    },
+    {
+      "name": "02-bakery",
+      "seed": 2026103101,
+      "reference": "microduck-paris-design-reference.png",
+      "crop": {
+        "width": 460,
+        "height": 700,
+        "x": 220,
+        "y": 160
+      },
+      "prompt": "Unprocessed RAW documentary photograph with natural muted colors and soft neutral exposure, authentic35mm camera photograph of the small physical Microduck biped robot from the reference image. Preserve its real construction: pale sky-blue rounded wedge head, a single circular black camera lens with a yellow ring on the visible side, thin orange hinged beak along the lower head edge, exposed slender black articulated neck and wiring, small pale-blue hip shell, exactly two black jointed mechanical legs, exactly two broad orange feet with yellow soles. It has NO arms, hands, wings, backpack, human face or organic duck body. Real molded plastic, metal joints, screws and cables, physically plausible25cm toy-sized robot. Exactly two Microducks, one pale-blue and one cream-colored with identical construction and orange beaks and feet, stand on a clean bakery counter looking curiously at one croissant on a small white plate. Warm Paris boulangerie interior, blurred baskets of bread, morning window light, low intimate camera angle. Both robots complete and clearly separated. Create a completely new Paris background; remove all people, hands, human legs, original gym floor, ball and stickers from the reference. This is a convincing photograph of physical robots, NOT a cartoon, drawing, illustration, watercolor, 3D render or plastic duck toy. Natural matte painted plastic, believable slight wear, delicate film grain, soft realistic shadows, subtle color grading, no HDR, no oversaturation, no neon colors, no glowing edges, no illustration, no toy-commercial CGI, no lettering, shop signs, text, logos or watermark. Landscape image."
+    },
+    {
+      "name": "03-seine",
+      "seed": 2026103102,
+      "reference": "microduck-paris-design-reference.png",
+      "crop": {
+        "width": 460,
+        "height": 700,
+        "x": 220,
+        "y": 160
+      },
+      "prompt": "Unprocessed RAW documentary photograph with natural muted colors and soft neutral exposure, authentic35mm camera photograph of the small physical Microduck biped robot from the reference image. Preserve its real construction: pale sky-blue rounded wedge head, a single circular black camera lens with a yellow ring on the visible side, thin orange hinged beak along the lower head edge, exposed slender black articulated neck and wiring, small pale-blue hip shell, exactly two black jointed mechanical legs, exactly two broad orange feet with yellow soles. It has NO arms, hands, wings, backpack, human face or organic duck body. Real molded plastic, metal joints, screws and cables, physically plausible25cm toy-sized robot. Exactly two Microducks, one pale-blue and one cream-colored, stand safely on the cobblestone walkway of a Paris bridge beside the Seine. They look across the river, ornate stone bridge balustrade and distant Paris rooftops, soft afternoon sunlight, low angle with both full bodies visible, realistic scale and ground contact. Create a completely new Paris background; remove all people, hands, human legs, original gym floor, ball and stickers from the reference. This is a convincing photograph of physical robots, NOT a cartoon, drawing, illustration, watercolor, 3D render or plastic duck toy. Natural matte painted plastic, believable slight wear, delicate film grain, soft realistic shadows, subtle color grading, no HDR, no oversaturation, no neon colors, no glowing edges, no illustration, no toy-commercial CGI, no lettering, shop signs, text, logos or watermark. Landscape image."
+    },
+    {
+      "name": "04-flowers",
+      "seed": 2026103103,
+      "reference": "microduck-paris-design-reference.png",
+      "crop": {
+        "width": 460,
+        "height": 700,
+        "x": 220,
+        "y": 160
+      },
+      "prompt": "Unprocessed RAW documentary photograph with natural muted colors and soft neutral exposure, authentic35mm camera photograph of the small physical Microduck biped robot from the reference image. Preserve its real construction: pale sky-blue rounded wedge head, a single circular black camera lens with a yellow ring on the visible side, thin orange hinged beak along the lower head edge, exposed slender black articulated neck and wiring, small pale-blue hip shell, exactly two black jointed mechanical legs, exactly two broad orange feet with yellow soles. It has NO arms, hands, wings, backpack, human face or organic duck body. Real molded plastic, metal joints, screws and cables, physically plausible25cm toy-sized robot. One pale-blue Microduck stands on the pavement beside buckets of fresh flowers at a charming Paris flower stall, looking up at a small bunch of yellow flowers leaning toward it. No holding or touching. Soft afternoon light, stone street, blurred pastel blossoms, authentic photographic depth of field, full robot visible. Create a completely new Paris background; remove all people, hands, human legs, original gym floor, ball and stickers from the reference. This is a convincing photograph of physical robots, NOT a cartoon, drawing, illustration, watercolor, 3D render or plastic duck toy. Natural matte painted plastic, believable slight wear, delicate film grain, soft realistic shadows, subtle color grading, no HDR, no oversaturation, no neon colors, no glowing edges, no illustration, no toy-commercial CGI, no lettering, shop signs, text, logos or watermark. Landscape image."
+    },
+    {
+      "name": "05-eiffel",
+      "seed": 2026103104,
+      "reference": "microduck-paris-design-reference.png",
+      "crop": {
+        "width": 460,
+        "height": 700,
+        "x": 220,
+        "y": 160
+      },
+      "prompt": "Unprocessed RAW documentary photograph with natural muted colors and soft neutral exposure, authentic35mm camera photograph of the small physical Microduck biped robot from the reference image. Preserve its real construction: pale sky-blue rounded wedge head, a single circular black camera lens with a yellow ring on the visible side, thin orange hinged beak along the lower head edge, exposed slender black articulated neck and wiring, small pale-blue hip shell, exactly two black jointed mechanical legs, exactly two broad orange feet with yellow soles. It has NO arms, hands, wings, backpack, human face or organic duck body. Real molded plastic, metal joints, screws and cables, physically plausible25cm toy-sized robot. Exactly two Microducks, one pale-blue and one cream-colored, stand together on the paved ground in a quiet Paris garden, looking toward the Eiffel Tower in the distance at golden hour. Warm sunset light, recognizable tower silhouette, romantic soft atmosphere. Camera at robot height, complete robots and feet clearly visible, ample breathing space in the composition. Create a completely new Paris background; remove all people, hands, human legs, original gym floor, ball and stickers from the reference. This is a convincing photograph of physical robots, NOT a cartoon, drawing, illustration, watercolor, 3D render or plastic duck toy. Natural matte painted plastic, believable slight wear, delicate film grain, soft realistic shadows, subtle color grading, no HDR, no oversaturation, no neon colors, no glowing edges, no illustration, no toy-commercial CGI, no lettering, shop signs, text, logos or watermark. Landscape image."
+    }
+  ]
+}

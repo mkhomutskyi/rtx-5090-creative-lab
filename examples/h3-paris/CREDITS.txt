@@ -1,0 +1,9 @@
+Music: Precious Memories by Shane Ivers - https://www.silvermansound.com
+Track: https://www.silvermansound.com/free-music/precious-memories
+Licence: Creative Commons Attribution4.0 https://creativecommons.org/licenses/by/4.0/
+Changes: excerpt from00:22, trimmed to the film, volume adjusted, fade-in and fade-out.
+Include this credit with any publication. Source-level licence checked30 October2026.
+Robot design reference: Microduck by Pollen Robotics at Hugging Face. https://pollen-robotics.com/microduck/
+Event inspiration: https://blogs.nvidia.com/blog/gtc-berlin-2026-keynote/
+Images and video are fictional AI-generated scenes. They do not document a real robot visit to Paris.
+Reference photograph belongs to its original creator and is not redistributed with this example.

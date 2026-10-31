@@ -6,6 +6,8 @@ This companion project supplies our Docker build recipe, Windows commands, origi
 
 ## Start here
 
+- [MiniMax H3: local video on an RTX 5090](docs/h3/README.md): model downloader, Docker profile, five robot images, animation commands and a music-video edit. See its [validation limits](docs/h3/VALIDATION.md).
+
 - [Windows and Docker setup](docs/WINDOWS-DOCKER.md): install prerequisites, prepare folders, build, check CUDA, generate, narrate and stop.
 - [Kokoro and Voxtral speech](docs/SPEECH-WINDOWS.md): generate three clips with each voice, transcribe them locally and open a listening page.
 - [Speech research](docs/SPEECH-RESEARCH.md): current Voxtral 3 coverage and the older downloadable baselines used here.
